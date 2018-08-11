@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Banco de Ideias</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="icon" href="img/ideia.png" type="image/png" size="16x16">
+		<link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'><!--Jamile-->
+		<script src="js/carrossel.js"></script>
+		
+	</head>
+<div id="container">
+	<body class="label">
+		<header>
+		<img class="imagem" src="img/ideia.png" alt="Ideia!">
+			<h1 class="titulo">Banco de Ideias</h1>
+			<nav>
+				<div> 
+					<button class="button"><a class="texto" href="index.html">Home</a></button> 
+					<button class="button"><a class="texto" href="areasint.html">Áreas de Interesse</a></button> 
+					<button class="button"><a class="texto" href="cadastro.html">Cadastro/Login</a></button> 
+					<button class="button"><a class="texto" href="contato.html">Contato</a></button>
+					<button class="button"><a class="texto" href="forum.html">Fórum de Discussão</a></button>					
+				</div>
+			</nav>
+		</header>
+
+		<article>
+			<div class="form1">		
+			<h2 > Login </h2>
+			<form action="action_page.php" method="get" name="myForm" action="/action_page.php"
+				onsubmit="return validateForm()">
+				<label for="E-mail">E-mail:</label><br>
+					<input type="text" name="email" placeholder="Digite seu email" ><br>
+				<label for="Senha">Senha:</label><br>
+					<input type="password" name="senha" placeholder="Digite sua senha" > 	
+				<input class="botao" type="submit" value="OK">
+			</form><br>
+
+			</div>
+			<div class="form2">		
+				<form action="action_page.php" method="get" name="myForm2" action="/action_page.php"
+				onsubmit="return validateForm2()">
+				<h2 > Efetue seu cadastro </h2>				
+				<label for="Nome">Nome:</label><br>
+				<input type="text" name="name" placeholder="Digite seu nome"><br>
+
+				<label for="E-mail">E-mail:</label><br>
+				<input type="text" name="email2" placeholder="Digite seu email"><br><br>
+
+				<label for="Senha">Senha:</label><br>
+				<input type="password" name="senha2" placeholder="Digite sua senha"><br><br>
+
+				<label for="Repita sua senha">Repita sua senha:</label><br>
+				<input type="password" name="rep_senha" placeholder="Repita sua senha"><br><br>
+				
+				<label for="Deseja receber as novidades do Banco de Ideias&copy?">Deseja receber as novidades do Banco de Ideias&copy?</label><br>
+					<input type="checkbox" name="answer" value="sim">SIM<br>
+					<input type="checkbox" name="answer" value="não">NÃO<br>
+				
+				<label for="Instituição de Ensino Superior">Instituição de Ensino Superior:</label><br>
+					<select name="instituicao">
+						<option value="ipa">Centro Universitário Metodista Ipa</option>
+						<option value="ufcspa">Universidade Federal de Ciências da Saúde de Porto Alegre - UFCSPA </option>
+						<option value="pucrs">Pontifícia Universidade Católica do Rio Grande do Sul - PUCRS</option>
+						<option value="uergs">Universidade Estadual do Rio Grande do Sul - UERGS</option>
+						<option value="unisinos">Universidade do Vale do Rio dos Sinos - UNISINOS</option>
+						<option value="lasalle">Universidade LaSalle - UNILASALLE</option>
+						<option value="ifrs" selected>Instituto Federal de Ciências e Tecnologias do RS - IFRS</option>
+						<option value="outros">Outros - Não listado</option>
+					</select><br>
+
+				<label for="Curso">Curso:</label><br>
+					<select name="curso">
+						<option value="administração">Administração</option>
+						<option value="biologia">Biologia</option>
+						<option value="ciencias sociais">Ciências Sociais</option>
+						<option value="direito">Direito</option>
+						<option value="educação física">Educação Física</option>
+						<option value="farmácia">Farmácia</option>
+						<option value="geografia">Geografia</option>
+						<option value="história">História</option>
+						<option value="Matemática">Matematica</option>
+						<option value="odontologia">Odontologia</option>
+						<option value="pedagogia">Pedagogia</option>
+						<option value="química">Química</option>
+						<option value="relações públicas">Relações Públicas</option>
+						<option value="sistemas para internet" selected>Sistemas para Intenet</option>
+						<option value="teologia">Teologia</option>
+						<option value="medicina">Medicina</option>
+					</select><br>
+
+				<label for="Observações">Observações:</label><br>
+					<textarea name="message" rows="10" cols="30"> Nesta área você pode colocar observações, dúvidas e sugestões sobre o nosso projeto!</textarea> <br> <br>
+				
+				<label for="Avalie esta página: (De 1 a 5, sendo 5 Excelente):">Avalie esta página: ( De 1 a 5, sendo 5 excelente ):</label><br>
+					<input type="number" name="quantity" min="1" max="5"><br>
+					
+					<input class="botao" class="corBorda3" type="submit" value="Enviar"  />
+					<input class="botao" class="corBorda3" type="reset" value="Limpar" /><br><br></div>	
+			</form><br>
+		</article>
+	<footer>
+		<p class="lista">&copy Developed by Engel | Jamile | Jaqueline | Rosselito |Todos os direitos reservados</p>
+	</footer>
+
+	</body>
+
+</html>
